@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085e73270ff26214eaf28963fcc2fefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   foot: {fileID: 5207807441713107588}
   ground:
     serializedVersion: 2
@@ -218,7 +218,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   acceleration: 0
-  accelerationSpeed: 0.05
+  accelerationSpeed: 0.1
 --- !u!70 &5207807442144276047
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
