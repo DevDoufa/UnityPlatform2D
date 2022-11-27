@@ -21,6 +21,7 @@ public class PlayerBehaviour : MonoBehaviour
     private bool isWallSliding;
     public int wallSlideSpeed;
     private int facing = 1;
+    public LayerMask CanWallSlide;
 
     private bool canMove = true;
 
@@ -117,7 +118,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void WallSlide() //WallSlide
     {
-        isTouchingWall = Physics2D.Raycast(wallCheck.position, new Vector2(facing, 0f), wallCheckDistance, ground);
+        isTouchingWall = Physics2D.Raycast(wallCheck.position, new Vector2(facing, 0f), wallCheckDistance, CanWallSlide);
     
         isWallSliding = (isTouchingWall && !anim.GetBool("onFloor") && rb.velocity.y < 0) ? true : false;
 

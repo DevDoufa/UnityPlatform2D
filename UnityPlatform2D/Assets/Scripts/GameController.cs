@@ -14,6 +14,17 @@ public class GameController : MonoBehaviour
         inst = this;
     }
 
+    void Update()
+    {
+        if (gameOver.activeSelf == true)
+        {
+            if (Input.GetButton("Jump"))
+            {
+                RestartScene();
+            }
+        }
+    }
+
     public void GameOver()
     { 
         CheckpointBehaviour.inst.txt.enabled = false;

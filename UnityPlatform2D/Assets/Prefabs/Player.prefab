@@ -214,6 +214,9 @@ MonoBehaviour:
   wallCheck: {fileID: 5207807441295071152}
   wallCheckDistance: 0.37
   wallSlideSpeed: 3
+  CanWallSlide:
+    serializedVersion: 2
+    m_Bits: 64
   acceleration: 0
   accelerationSpeed: 0.05
 --- !u!70 &5207807442144276047
